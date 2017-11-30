@@ -9,7 +9,7 @@ picb = imnoise(pic, 'salt & pepper');
 
 height = size(pic, 1);
 width = size(pic, 2);
-b = 1;
+b = 2000;
 noise = sqrt(-b * log(1 - rand(height, width)));
 picc = uint8(double(pic) + noise);
 
